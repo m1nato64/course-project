@@ -14,5 +14,6 @@
 #include <ctime>
 #include <string>
 #include <conio.h>
+#include <vector>
 
 using namespace std;
