@@ -4,41 +4,45 @@
 // Created by m1nato64
 
 #include "includes.h"
+#include "currentCourse.h"
+#include "showCurrentBalance.h"
+// #include "myTransactions.h"
+// #include "transferToAnotherAccount.h"
+
 using namespace std;
 
-void chooseOperation()
-{
-    int choice;
+int main() {
 
-    cout << "Выберите операцию:\n";
-    cout << "1. Мой баланс\n";
-    cout << "2. Перевод на другой счет\n";
-    cout << "3. Мои транзакции\n";
-    cout << "4. Текущий курс\n";
-    cout << "Введите номер операции: ";
+    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    int userChoice;
 
-    cin >> choice;
+    cout << "Choose operation:\n";
+    cout << "1. My balance:" << "\n";
 
-    switch (choice)
+    cout << "2. Transfer to another account\n";
+    cout << "3. My transactions\n";
+    cout << "4. Current course\n";
+    cout << "Write a number of operation: ";
+
+    cin >> userChoice;
+
+    switch (userChoice)
     {
     case 1:
-        cout << "Ваш баланс: 1000 рублей\n";
+        cout << "Your balance: " << showBalance() << "\n";
         break;
     case 2:
         cout << "Перевод выполнен успешно\n";
         break;
     case 3:
         cout << "Список транзакций:\n";
-        // add transactionsList
         break;
     case 4:
-        cout << "Текущий курс: 1$ = 3.13 рубля\n";
-        break;
+        currentCourse(); break;
     default:
-        cout << "Неверный выбор операции, повторите выбор операции\n";
-        break;
+        cout << "Неверный выбор операции, повторите выбор операции\n"; break;
     }
 
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
 }

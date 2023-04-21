@@ -16,6 +16,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="allOperationsController\showCurrentBalance">
+      <UniqueIdentifier>{880db5a4-3dbe-4a18-90b0-93b36d0bb9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allOperationsController\showCurrentCourse">
+      <UniqueIdentifier>{109ad50d-7b27-40a4-8835-8c6a241667a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="registrationForm.cpp">
@@ -24,14 +30,44 @@
     <ClCompile Include="operationsChoose.cpp">
       <Filter>allOperationsController</Filter>
     </ClCompile>
+    <ClCompile Include="admin.cpp">
+      <Filter>clientController</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>clientController</Filter>
+    </ClCompile>
+    <ClCompile Include="transferToAnotherAccount.cpp">
+      <Filter>allOperationsController</Filter>
+    </ClCompile>
+    <ClCompile Include="myTransactions.cpp">
+      <Filter>allOperationsController</Filter>
+    </ClCompile>
+    <ClCompile Include="showCurrentBalance.cpp">
+      <Filter>allOperationsController\showCurrentBalance</Filter>
+    </ClCompile>
+    <ClCompile Include="currentCourse.cpp">
+      <Filter>allOperationsController\showCurrentCourse</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes.h">
       <Filter>dataFiles</Filter>
     </ClInclude>
+    <ClInclude Include="showCurrentBalance.h">
+      <Filter>allOperationsController\showCurrentBalance</Filter>
+    </ClInclude>
+    <ClInclude Include="currentCourse.h">
+      <Filter>allOperationsController\showCurrentCourse</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="bank_data.txt">
+    <Text Include="show_currentBalance.txt">
+      <Filter>dataFiles</Filter>
+    </Text>
+    <Text Include="transaction_data.txt">
+      <Filter>dataFiles</Filter>
+    </Text>
+    <Text Include="current_course.txt">
       <Filter>dataFiles</Filter>
     </Text>
   </ItemGroup>

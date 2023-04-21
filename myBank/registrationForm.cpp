@@ -5,6 +5,7 @@
 
 #include "includes.h"
 #include <limits>
+
 using namespace std;
 
 class registationUser {
@@ -14,7 +15,11 @@ class registationUser {
         int age;
 };
 
-int main() {
+int lol() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    cout << setw(40) << setfill(' ') << "Добро пожаловать в банковскую систему 'Serekoff'.\n";
+    cout << setw(40) << setfill(' ') << "Хотите создать BankID или подключится к имеещемуся?\n";
     registationUser user;       // Экземпляр для обращения.
     cout << "Enter a username: ";
     cin >> user.username;
@@ -24,10 +29,5 @@ int main() {
 
     cout << "Enter age: ";
     cin >> user.age;
-
-        // Выводим введенные данные на экран
-        cout << "Username: " << user.username << endl;
-        cout << "Password: " << user.password << endl;
-        cout << "Age: " << user.age << " years old" << endl;
-
-    }
+    return 0;
+ }

@@ -128,14 +128,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="admin.cpp" />
+    <ClCompile Include="currentCourse.cpp" />
+    <ClCompile Include="myTransactions.cpp" />
     <ClCompile Include="registrationForm.cpp" />
     <ClCompile Include="operationsChoose.cpp" />
+    <ClCompile Include="showCurrentBalance.cpp" />
+    <ClCompile Include="transferToAnotherAccount.cpp" />
+    <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="currentCourse.h" />
     <ClInclude Include="includes.h" />
+    <ClInclude Include="showCurrentBalance.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="bank_data.txt" />
+    <Text Include="show_currentBalance.txt" />
+    <Text Include="current_course.txt" />
+    <Text Include="transaction_data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
