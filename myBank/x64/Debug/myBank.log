@@ -1,2 +1,2 @@
-﻿  operationsChoose.cpp
-  myBank.vcxproj -> E:\Programming\C++\course project\myBank\x64\Debug\myBank.exe
+﻿  registrationForm.cpp
+E:\Programming\C++\course project\myBank\myBank\registrationForm.cpp(38): error C4700: использована неинициализированная локальная переменная "choiceOnBankID"

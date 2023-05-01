@@ -1,13 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="allOperationsController">
-      <UniqueIdentifier>{db5ac2e4-84c5-4343-83f7-40eb665a1c3a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="registrationFormController">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="dataFiles">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
@@ -16,37 +9,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="allOperationsController\showCurrentBalance">
+    <Filter Include="clientController\adminModule">
+      <UniqueIdentifier>{14eaae0e-687a-4b87-8348-670beb178272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="clientController\userModule">
+      <UniqueIdentifier>{b90743c4-6e9c-4b43-84d1-783a9a452e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="registrationController">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="registrationController\bankIDModule">
+      <UniqueIdentifier>{5cd7a28c-2124-427e-b99b-0b33a1bd833a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operationsController">
+      <UniqueIdentifier>{db5ac2e4-84c5-4343-83f7-40eb665a1c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operationsController\showCurrentBalance">
       <UniqueIdentifier>{880db5a4-3dbe-4a18-90b0-93b36d0bb9c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="allOperationsController\showCurrentCourse">
+    <Filter Include="operationsController\showCurrentCourse">
       <UniqueIdentifier>{109ad50d-7b27-40a4-8835-8c6a241667a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="registrationController\bankIDModule\connectBankIDModule">
+      <UniqueIdentifier>{002a835a-05ae-4e4c-a721-f0f584fcb0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="registrationController\bankIDModule\createBankIDModule">
+      <UniqueIdentifier>{1df03b17-ac28-4c52-9d8c-8b0e7b823ed6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="registrationForm.cpp">
-      <Filter>registrationFormController</Filter>
+      <Filter>registrationController</Filter>
     </ClCompile>
     <ClCompile Include="operationsChoose.cpp">
-      <Filter>allOperationsController</Filter>
-    </ClCompile>
-    <ClCompile Include="admin.cpp">
-      <Filter>clientController</Filter>
-    </ClCompile>
-    <ClCompile Include="user.cpp">
-      <Filter>clientController</Filter>
+      <Filter>operationsController</Filter>
     </ClCompile>
     <ClCompile Include="transferToAnotherAccount.cpp">
-      <Filter>allOperationsController</Filter>
+      <Filter>operationsController</Filter>
     </ClCompile>
     <ClCompile Include="myTransactions.cpp">
-      <Filter>allOperationsController</Filter>
+      <Filter>operationsController</Filter>
     </ClCompile>
     <ClCompile Include="showCurrentBalance.cpp">
-      <Filter>allOperationsController\showCurrentBalance</Filter>
+      <Filter>operationsController\showCurrentBalance</Filter>
     </ClCompile>
     <ClCompile Include="currentCourse.cpp">
-      <Filter>allOperationsController\showCurrentCourse</Filter>
+      <Filter>operationsController\showCurrentCourse</Filter>
+    </ClCompile>
+    <ClCompile Include="admin.cpp">
+      <Filter>clientController\adminModule</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>clientController\userModule</Filter>
+    </ClCompile>
+    <ClCompile Include="connectBankID.cpp">
+      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+    </ClCompile>
+    <ClCompile Include="createBankID.cpp">
+      <Filter>registrationController\bankIDModule\createBankIDModule</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,10 +75,19 @@
       <Filter>dataFiles</Filter>
     </ClInclude>
     <ClInclude Include="showCurrentBalance.h">
-      <Filter>allOperationsController\showCurrentBalance</Filter>
+      <Filter>operationsController\showCurrentBalance</Filter>
     </ClInclude>
     <ClInclude Include="currentCourse.h">
-      <Filter>allOperationsController\showCurrentCourse</Filter>
+      <Filter>operationsController\showCurrentCourse</Filter>
+    </ClInclude>
+    <ClInclude Include="connectAsUser.h">
+      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+    </ClInclude>
+    <ClInclude Include="connectAsAdmin.h">
+      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+    </ClInclude>
+    <ClInclude Include="createBankID.h">
+      <Filter>registrationController\bankIDModule\createBankIDModule</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

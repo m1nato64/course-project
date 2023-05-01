@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int main() {
+int lol() {
 
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
@@ -45,5 +45,5 @@ int main() {
     default:
         cout << "Неверный выбор операции, повторите выбор операции\n"; break;
     }
-
+    return 0;
 }

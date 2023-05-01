@@ -129,6 +129,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="admin.cpp" />
+    <ClCompile Include="connectBankID.cpp" />
+    <ClCompile Include="createBankID.cpp" />
     <ClCompile Include="currentCourse.cpp" />
     <ClCompile Include="myTransactions.cpp" />
     <ClCompile Include="registrationForm.cpp" />
@@ -138,6 +140,9 @@
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="connectAsAdmin.h" />
+    <ClInclude Include="connectAsUser.h" />
+    <ClInclude Include="createBankID.h" />
     <ClInclude Include="currentCourse.h" />
     <ClInclude Include="includes.h" />
     <ClInclude Include="showCurrentBalance.h" />
