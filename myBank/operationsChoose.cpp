@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int lol() {
+int operationChoose(){
 
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
@@ -22,7 +22,7 @@ int lol() {
     cout << "Choose operation:\n";
     cout << "1. My balance:" << "\n";
 
-    cout << "2. Transfer to another account\n";
+    cout << "2. Transfer money to another account\n";
     cout << "3. My transactions\n";
     cout << "4. Current course\n";
     cout << "Write a number of operation: ";

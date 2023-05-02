@@ -140,17 +140,21 @@
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="admin.h" />
     <ClInclude Include="connectAsAdmin.h" />
     <ClInclude Include="connectAsUser.h" />
     <ClInclude Include="createBankID.h" />
     <ClInclude Include="currentCourse.h" />
     <ClInclude Include="includes.h" />
+    <ClInclude Include="operationChoose.h" />
     <ClInclude Include="showCurrentBalance.h" />
+    <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="show_currentBalance.txt" />
     <Text Include="current_course.txt" />
     <Text Include="transaction_data.txt" />
+    <Text Include="listOfUsers_data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

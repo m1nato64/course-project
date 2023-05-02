@@ -31,25 +31,25 @@
     <Filter Include="operationsController\showCurrentCourse">
       <UniqueIdentifier>{109ad50d-7b27-40a4-8835-8c6a241667a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="registrationController\bankIDModule\connectBankIDModule">
+    <Filter Include="operationsController\operationChoose">
+      <UniqueIdentifier>{44a2eaca-3d6b-4f3c-9726-a8f1cf4f0ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="registrationController\bankIDModule\connectBankID">
       <UniqueIdentifier>{002a835a-05ae-4e4c-a721-f0f584fcb0e8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="registrationController\bankIDModule\createBankIDModule">
+    <Filter Include="registrationController\bankIDModule\createBankID">
       <UniqueIdentifier>{1df03b17-ac28-4c52-9d8c-8b0e7b823ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operationsController\myTransaction">
+      <UniqueIdentifier>{214f6465-55b4-4396-a7af-d9414b8d5e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operationsController\transferToAnotherAccount">
+      <UniqueIdentifier>{6918107d-ab97-4d78-88fc-31058e4706e8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="registrationForm.cpp">
       <Filter>registrationController</Filter>
-    </ClCompile>
-    <ClCompile Include="operationsChoose.cpp">
-      <Filter>operationsController</Filter>
-    </ClCompile>
-    <ClCompile Include="transferToAnotherAccount.cpp">
-      <Filter>operationsController</Filter>
-    </ClCompile>
-    <ClCompile Include="myTransactions.cpp">
-      <Filter>operationsController</Filter>
     </ClCompile>
     <ClCompile Include="showCurrentBalance.cpp">
       <Filter>operationsController\showCurrentBalance</Filter>
@@ -64,10 +64,19 @@
       <Filter>clientController\userModule</Filter>
     </ClCompile>
     <ClCompile Include="connectBankID.cpp">
-      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+      <Filter>registrationController\bankIDModule\connectBankID</Filter>
     </ClCompile>
     <ClCompile Include="createBankID.cpp">
-      <Filter>registrationController\bankIDModule\createBankIDModule</Filter>
+      <Filter>registrationController\bankIDModule\createBankID</Filter>
+    </ClCompile>
+    <ClCompile Include="operationsChoose.cpp">
+      <Filter>operationsController\operationChoose</Filter>
+    </ClCompile>
+    <ClCompile Include="transferToAnotherAccount.cpp">
+      <Filter>operationsController\transferToAnotherAccount</Filter>
+    </ClCompile>
+    <ClCompile Include="myTransactions.cpp">
+      <Filter>operationsController\myTransaction</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,14 +89,23 @@
     <ClInclude Include="currentCourse.h">
       <Filter>operationsController\showCurrentCourse</Filter>
     </ClInclude>
-    <ClInclude Include="connectAsUser.h">
-      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+    <ClInclude Include="createBankID.h">
+      <Filter>registrationController\bankIDModule\createBankID</Filter>
+    </ClInclude>
+    <ClInclude Include="operationChoose.h">
+      <Filter>operationsController\operationChoose</Filter>
     </ClInclude>
     <ClInclude Include="connectAsAdmin.h">
-      <Filter>registrationController\bankIDModule\connectBankIDModule</Filter>
+      <Filter>registrationController\bankIDModule\connectBankID</Filter>
     </ClInclude>
-    <ClInclude Include="createBankID.h">
-      <Filter>registrationController\bankIDModule\createBankIDModule</Filter>
+    <ClInclude Include="connectAsUser.h">
+      <Filter>registrationController\bankIDModule\connectBankID</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>clientController\userModule</Filter>
+    </ClInclude>
+    <ClInclude Include="admin.h">
+      <Filter>clientController\adminModule</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +116,9 @@
       <Filter>dataFiles</Filter>
     </Text>
     <Text Include="current_course.txt">
+      <Filter>dataFiles</Filter>
+    </Text>
+    <Text Include="listOfUsers_data.txt">
       <Filter>dataFiles</Filter>
     </Text>
   </ItemGroup>

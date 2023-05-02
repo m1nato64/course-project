@@ -1,2 +1,6 @@
-﻿  registrationForm.cpp
-E:\Programming\C++\course project\myBank\myBank\registrationForm.cpp(38): error C4700: использована неинициализированная локальная переменная "choiceOnBankID"
+﻿  connectBankID.cpp
+  myTransactions.cpp
+  registrationForm.cpp
+  user.cpp
+  Создание кода...
+  myBank.vcxproj -> E:\Programming\C++\course project\myBank\x64\Debug\myBank.exe

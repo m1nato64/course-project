@@ -15,5 +15,8 @@
 #include <string>
 #include <conio.h>
 #include <vector>
+#include <chrono>
+#include <thread>
+#include <sstream>
 
 using namespace std;
